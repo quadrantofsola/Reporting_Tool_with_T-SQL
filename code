@@ -1,0 +1,62 @@
+/* Creating combined crime table */
+
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], [Geolocation] INTO allManchesterCrimeData from 
+
+(select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-01-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-02-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-03-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-04-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-05-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-06-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-07-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-08-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-09-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-10-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-11-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2017-12-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-01-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-02-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-03-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-04-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-05-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-06-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-07-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-08-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-09-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-10-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-11-greater-manchester-stre] UNION ALL
+select [Crime ID], [Month], [Reported by], [Falls within], [Longitude], [Latitude], [Location], [LSOA code], [LSOA name], [Crime type], [Last outcome category], [Context], geography::Point([Latitude], [Longitude], 4326) as [Geolocation]  from [dbo].[2018-12-greater-manchester-stre]) a;
+
+ALTER TABLE dbo.allManchesterCrimeData ADD ID INT IDENTITY;
+ALTER TABLE dbo.allManchesterCrimeData ADD CONSTRAINT PK_CrimeId PRIMARY KEY NONCLUSTERED (ID);
+Go
+
+
+
+/* Creating View for Crime Report Area and Population Wise */
+
+CREATE VIEW CrimeReports AS
+select e.[LSOA name], e.[Crime type], e.count, l.Total_Population 
+	from (select [LSOA code], [LSOA name], [Crime type], count(*) as [count] from allManchesterCrimeData
+	group by [LSOA code], [LSOA name], [Crime type])e 
+	INNER JOIN lsoaPersons l on l.[Area Codes]=e.[LSOA code]
+
+
+/* Creating View for Vehicle Crimes */
+
+CREATE VIEW VehicleCrimeSummary AS
+select * from allManchesterCrimeData where [Crime type] = 'Vehicle crime';
+
+
+
+
+/* Creating View for Anti Social Behaviour */
+
+CREATE VIEW AntiSocialCrimeSummary AS
+	select * from allManchesterCrimeData where [Crime type] = 'Anti-social behaviour' and [LSOA name] like 'salford%';
+
+
+
+select * from CrimeReports;
+select * from VehicleCrimeSummary;
+select * from AntiSocialCrimeSummary;
